@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <p>Upload Image</p>
+            <input type="file" name="image">
+            <input type="submit" value="Upload">
+        </form>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
