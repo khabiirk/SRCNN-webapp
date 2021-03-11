@@ -1,5 +1,5 @@
 import sys
-import gunicorn
+import gunicorn, tensorflow
 import keras
 import cv2
 import numpy as np
