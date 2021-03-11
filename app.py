@@ -8,14 +8,14 @@ from os import remove
 import base64
 import re
 import io
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./build', static_url_path='/')
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 srcnn = SRCNN()
 
 @app.route('/', methods=['GET', 'POST'])
 def load():
-    return render_template('base.html')
+    return app.send_static_file('index.html')
 
 @app.route('/predict', methods=['POST'])
 @cross_origin()
