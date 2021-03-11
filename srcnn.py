@@ -5,7 +5,6 @@ import numpy as np
 import matplotlib
 import math
 from matplotlib import pyplot as plt
-import skimage
 import os
 from PIL import Image
 

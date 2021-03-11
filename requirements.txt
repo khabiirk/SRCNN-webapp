@@ -1,8 +1,6 @@
 Flask==1.1.2
-scikit_image==0.17.2
 numpy==1.19.5
 matplotlib==3.3.2
 flask_cors==3.0.10
 keras==2.4.3
 Pillow==8.1.2
-skimage==0.0
