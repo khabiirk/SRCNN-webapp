@@ -47,4 +47,5 @@ def predict():
 
 
 if __name__ == '__main__':
+    app = Flask(__name__, static_folder='./build', static_url_path='/')
     app.run(host='localhost', port=3000)
