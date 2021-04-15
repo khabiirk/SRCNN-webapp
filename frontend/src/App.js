@@ -17,7 +17,7 @@ function App() {
     e.preventDefault();
     const formData = new FormData();
     formData.append("image", selectedFile);
-    axios.post('http://127.0.0.1:5000/predict', formData)
+    axios.post('https://srcnn-webapp.azurewebsites.net/predict', formData)
     .then (res => {
       console.log(res);
       setPredicted('data:image/png;base64,' + res.data.data);

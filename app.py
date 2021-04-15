@@ -9,8 +9,9 @@ import base64
 import re
 import io
 app = Flask(__name__, static_folder='./build', static_url_path='/')
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+cors = CORS(app, allow_headers=['Content-Type', 'Access-Control-Allow-Origin',
+                         'Access-Control-Allow-Headers', 'Access-Control-Allow-Methods'])
+
 srcnn = SRCNN()
 
 @app.route('/', methods=['GET', 'POST'])
