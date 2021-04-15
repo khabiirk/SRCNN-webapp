@@ -19,6 +19,7 @@ def load():
     return app.send_static_file('index.html')
 
 @app.route('/predict', methods=['POST'])
+
 @cross_origin()
 def predict():
     
